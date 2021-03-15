@@ -17,6 +17,6 @@ You need to change the **build** section in the **package.json** and add your op
 The results from this app are not as good as the python version. This could be due to the differences in the Javascript version of TensorFlow.
 
 ![Example 1](
-https://github.com/vincent1bt/Line-art-colorization-electron-app/blob/main/app_example_images/example1/example1.png)
+https://github.com/vincent1bt/Line-art-colorization-electron-app/blob/main/app_example_images/example1.png)
 ![Example 2](
-https://github.com/vincent1bt/Line-art-colorization-electron-app/blob/main/app_example_images/example1/example2.png)
+https://github.com/vincent1bt/Line-art-colorization-electron-app/blob/main/app_example_images/example2.png)
