@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>Electron from scratch</title>
+    <link rel="stylesheet" href="assets/index.css">
+  </head>
+  <body>
+    <div id="app" class="content">
+        <h1>
+            Line Art Colorize
+        </h1>
+        <p class="content-desc">
+            This app colorizes a line art image using two referece color images of adjacent frames.
+        </p>
+        <section class="content-option">
+            <h3>Load Line Art Images</h3>
+            <p>
+                Firstly, you need 3 line art images, two of these images correspond to the reference color images.
+                The remaining image will be colorized.
+            </p>
+            <button id="line-art-folder">
+                Search Line Art Images Folder
+            </button>
+            <section class="content-option-images">
+                <div class="content-option-images-item">
+                    <img src="assets/preview.jpg" id="line-art-1">
+                    <input type="radio" name="colorize" value="1" id="in-1"/>
+                    <label for="in-1">Colorize this image</label>
+                </div>
+                <div class="content-option-images-item">
+                    <img src="assets/preview.jpg" id="line-art-2">
+                    <input type="radio" name="colorize" value="2" id="in-2" checked/>
+                    <label for="in-2">Colorize this image</label>
+                </div>
+                <div class="content-option-images-item">
+                    <img src="assets/preview.jpg" id="line-art-3">
+                    <input type="radio" name="colorize" value="3" id="in-3"/>
+                    <label for="in-3">Colorize this image</label>
+                </div>
+            </section>
+        </section>
+
+        <section class="content-option">
+            <h3>Load Distance Map Images</h3>
+            <p>
+                You also need 3 distances map images for each line art image.
+            </p>
+            <button id="distance-folder">
+                Search Distance Map Images Folder
+            </button>
+            <section class="content-option-images">
+                <div class="content-option-images-item">
+                    <img src="assets/preview.jpg" id="distance-1">
+                </div>
+                <div class="content-option-images-item">
+                    <img src="assets/preview.jpg" id="distance-2">
+                </div>
+                <div class="content-option-images-item">
+                    <img src="assets/preview.jpg" id="distance-3">
+                </div>
+            </section>
+        </section>
+
+        <section class="content-option">
+            <h3>Load Color Images</h3>
+            <p>
+                You need the two reference color images. 
+            </p>
+            <button id="color-folder">
+                Search Color Images Folder
+            </button>
+            <section class="content-option-images images_color">
+                <div class="content-option-images-item">
+                    <img src="assets/preview.jpg" id="color-1">
+                </div>
+                <div class="content-option-images-item">
+                    <img src="assets/preview.jpg" id="color-3">
+                </div>
+                <div class="content-option-images-item">
+                </div>
+            </section>
+        </section>
+
+        <section class="content-model">
+            <h3>Colorize Image</h3>
+            <div class="content-model-containter">
+                <div class="content-model-containter-right">
+                    <img src="assets/preview2.jpg" alt="" id="final_image">
+                </div>
+                <div class="content-model-containter-left">
+                    <div class="content-model-containter-center">
+                        <span><p id="first_p">First part</p><img src=" " class="content-model-img" alt="" id="first_img"></span>
+                        <span><p id="second_p">Second part</p><img src=" " alt="" class="content-model-img" id="second_img"></span>
+                        <span><p id="final_p">Final part</p><img src=" " alt="" class="content-model-img" id="final_img"></span>
+                    </div>
+                </div>
+                <div class="content-model-containter-button">
+                    <button id="run-model">
+                        Run Model
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="front_js.js"></script>
+  </body>
+</html>

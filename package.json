@@ -1,0 +1,33 @@
+{
+  "name": "colorization-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "electron index.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "devDependencies": {
+    "electron": "^11.3.0",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^2.7.0",
+    "jimp": "^0.16.1",
+    "junk": "^3.1.0"
+  },
+  "build": {
+    "mac": {
+      "category": "productivity"
+    },
+    "files": [
+      "index.js",
+      "src"
+    ],
+    "extraResources": ["model/**/*"]
+  }
+}
