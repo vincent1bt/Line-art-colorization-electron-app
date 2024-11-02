@@ -1,6 +1,6 @@
 # Line Art Colorization Electron App
 
-This repository contains the code for the Electron App that packages the Line Art Colorization Model which code you can find [here](https://github.com/vincent1bt/line-art-colorization) and a blog post about the model [here](https://vincentblog.xyz/posts/line-art-colorization-using-a-deep-learning-model).
+This repository contains the code for the Electron App that packages the Line Art Colorization Model which code you can find [here](https://github.com/vincent1bt/line-art-colorization) and a blog post about the model [here](https://vincentblog.link/posts/line-art-colorization-using-a-deep-learning-model).
 
 You can also find a blog post about the process to build this app [here](https://github.com/vincent1bt/Line-art-colorization-electron-app).
 
